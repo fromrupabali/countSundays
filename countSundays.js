@@ -18,7 +18,7 @@ function countSundays(startYear, endYear,day){
                 J = ( i === 0 || i === 1) ? Math.floor((currentYear - 1) / 100): Math.floor(currentYear / 100), 
                 h;
 
-            // Zeller's congruence
+            // Zeller's congruence formula
             h = Math.floor((q+ ((13*(m+1))/5) + K + (K/4) + 5 - J)%7);
             if(h === day){
                 totalSunday++;
